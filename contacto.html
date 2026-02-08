@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - La Dulcería de Marcela</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            font-family: var(--font-body);
+            font-size: 1rem;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar glass">
+        <div class="container">
+            <a href="index.html" class="logo">La Dulcería de Marcela</a>
+            <div class="menu-toggle" id="mobile-menu"><i class="fas fa-bars"></i></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero"
+        style="height: 50vh; background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1555507036-ab1f4038808a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1852&q=80');">
+        <div class="hero-content container">
+            <h1>Contáctanos</h1>
+            <p>¿Tienes una idea dulce en mente? Hablemos.</p>
+        </div>
+    </header>
+
+    <section class="section container" style="padding: 4rem 2rem;">
+        <div style="display: flex; flex-wrap: wrap; gap: 4rem;">
+            <!-- Contact Info -->
+            <div style="flex: 1; min-width: 300px;">
+                <h2 style="margin-bottom: 2rem;">Información</h2>
+                <div class="glass" style="padding: 2rem;">
+                    <p style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 1rem;">
+                        <i class="fas fa-map-marker-alt" style="color: var(--primary-color); font-size: 1.5rem;"></i>
+                        <span>Residencial Villas de Cádiz, Polígono 15 Casa 39, Ciudad Real, Santa Ana</span>
+                    </p>
+                    <p style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 1rem;">
+                        <i class="fab fa-whatsapp" style="color: var(--primary-color); font-size: 1.5rem;"></i>
+                        <a href="https://wa.me/50376172548" target="_blank">+503 7617 2548</a>
+                    </p>
+                    <p style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 1rem;">
+                        <i class="fas fa-envelope" style="color: var(--primary-color); font-size: 1.5rem;"></i>
+                        <a href="mailto:ljosue.chavez@gmail.com">ljosue.chavez@gmail.com</a>
+                    </p>
+                    <p style="margin-bottom: 0; display: flex; align-items: center; gap: 1rem;">
+                        <i class="fas fa-clock" style="color: var(--primary-color); font-size: 1.5rem;"></i>
+                        <span>Lun - Sáb: 9:00 AM - 8:00 PM<br>Dom: 10:00 AM - 4:00 PM</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div style="flex: 1; min-width: 300px;">
+                <h2 style="margin-bottom: 2rem;">Envíanos un Mensaje</h2>
+                <form class="glass contact-form" style="padding: 2rem;" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="contactName" placeholder="Tu Nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="contactEmail" placeholder="Tu Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="contactMessage" placeholder="Cuéntanos sobre tu pedido o consulta..."
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 La Dulcería de Marcela. Todos los derechos reservados.</p>
+            <div class="social-links" style="margin-top: 1rem;">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
